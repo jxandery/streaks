@@ -1,3 +1,7 @@
+source 'https://rubygems.org'
+ruby '2.2.3'
+
+gem 'rails', '4.2.1'
 gem 'pg'
 gem 'bcrypt'
 gem 'unicorn'
@@ -21,7 +25,7 @@ group :development, :test do
   gem 'sqlite3', '~> 1.3.10'
   gem 'rspec-rails'
   gem 'guard-rspec'
-  gem 'factory_girl_rails’, ‘~> 4.0'
+  gem 'factory_girl_rails', '~> 4.0'
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'simplecov'
