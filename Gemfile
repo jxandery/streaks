@@ -18,6 +18,10 @@ gem 'validates_email_format_of'
 gem 'sprockets-rails'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+group :development do
+  gem 'web-console', '~> 2.0'
+end
+
 group :development, :test do
   gem 'pry'
   gem 'launchy'
@@ -26,8 +30,6 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'factory_girl_rails', '~> 4.0'
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
   gem 'simplecov'
   gem 'database_cleaner'
   gem 'better_errors'
