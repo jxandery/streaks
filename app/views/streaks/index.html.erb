@@ -1,0 +1,13 @@
+<h1>Streaks Tracker</h1>
+
+<%= form_for @streak do |f| %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.submit %>
+<% end %>
+
+<% @streaks.each do |streak| %>
+  Current <%= streak.description %> Streak is <%= streak.current_streak %><br>
+  Longest <%= streak.description %> Streak is <%= streak.longest_streak %><br>
+  Total Days <%= streak.description %> is <%= streak.total_days %><br><br>
+<% end %><br><br>
