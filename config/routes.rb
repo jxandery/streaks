@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  #get 'welcome/index'
 
-   root 'welcome#index'
+   root 'streaks#index'
+
+   resources :streaks
 
   # Example resource route with sub-resources:
   #   resources :products do
