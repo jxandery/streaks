@@ -8,7 +8,7 @@ feature 'visitor can see their exercise streaks' do
       expect(page).to have_content('Streaks Tracker')
     end
 
-    scenario 'user can add a streak' do
+    scenario 'user can add a streak and see starting values for that streak' do
       visit root_path
       fill_in 'Description', with: 'Running'
       click_link_or_button 'Create Streak'
